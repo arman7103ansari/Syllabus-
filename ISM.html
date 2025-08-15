@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Solid Mechanics Syllabus</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #111827; /* Dark background */
+            color: #cbd5e1; /* Light gray text for readability */
+        }
+        .header-title {
+            font-family: 'Poppins', sans-serif;
+        }
+        .module-card {
+            background-color: #1f2937;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            border: 1px solid #374151;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .module-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #8b5cf6; /* Purple accent for Solid Mechanics */
+            margin-bottom: 0.5rem;
+        }
+        .module-subtitle {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #c4b5fd; /* Lighter purple */
+            margin-bottom: 1rem;
+        }
+        .styled-list li {
+            padding-left: 1.5rem;
+            position: relative;
+            margin-bottom: 0.5rem;
+        }
+        .styled-list li::before {
+            content: '➔';
+            position: absolute;
+            left: 0;
+            color: #8b5cf6;
+        }
+    </style>
+</head>
+<body class="antialiased p-4 md:p-8">
+
+    <div class="container mx-auto max-w-5xl">
+        <!-- Header Section -->
+        <header class="text-center mb-10">
+            <h1 class="header-title text-4xl md:text-5xl font-bold text-white">Introduction to Solid Mechanics</h1>
+            <p class="text-lg text-white/70 mt-2">(PCC CE 205)</p>
+        </header>
+
+        <!-- Navigation -->
+        <div class="mb-10">
+            <a href="index.html" class="inline-flex items-center px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-lg transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+                Back
+            </a>
+        </div>
+
+        <!-- Main Syllabus Content -->
+        <main>
+            <!-- Module 1 -->
+            <div class="module-card">
+                <h2 class="module-title">Module 1</h2>
+                <h3 class="module-subtitle">Simple Stresses and Strains</h3>
+                <p>Concept of stress and strain, St. Venant’s principle, stress and strain diagram, Elasticity and plasticity – Types of stresses and strains, Hooke’s law – stress – strain diagram for mild steel – Working stress – Factor of safety – Lateral strain, Poisson’s ratio and volumetric strain – Elastic moduli and the relationship between them – Bars of varying section – composite bars – Temperature stresses. Strain Energy – Resilience – Gradual, sudden, impact and shock loadings – simple applications.</p>
+            </div>
+
+            <!-- Module 2 -->
+            <div class="module-card">
+                <h2 class="module-title">Module 2</h2>
+                <h3 class="module-subtitle">Compound Stresses and Strains</h3>
+                <p>Two dimensional system, stress at a point on a plane, principal stresses and principal planes, Mohr circle of stress, ellipse of stress and their applications. Two dimensional stress-strain system, principal strains and principal axis of strain, circle of strain and ellipse of strain. Relationship between elastic constants.</p>
+            </div>
+
+            <!-- Module 3 -->
+            <div class="module-card">
+                <h2 class="module-title">Module 3</h2>
+                <h3 class="module-subtitle">Bending moment and Shear Force Diagrams</h3>
+                <p>Bending moment (BM) and shear force (SF) diagrams.BM and SF diagrams for cantilevers simply supported and fixed beams with or without overhangs. Calculation of maximum BM and SF and the point of contra flexure under concentrated loads, uniformly distributed loads over the whole span or part of span, combination of concentrated loads (two or three) and uniformly distributed loads, uniformly varying loads, application of moments.</p>
+            </div>
+
+            <!-- Module 4 -->
+            <div class="module-card">
+                <h2 class="module-title">Module 4</h2>
+                <h3 class="module-subtitle">Flexural Stresses</h3>
+                <p>Theory of simple bending– Assumptions – Derivation of bending equation: M/I = f/y = E/R - Neutral axis – Determination of bending stresses– Section modulus of rectangular and circular sections (Solid and Hollow), I,T, Angle and Channel sections – Design of simple beam sections.</p>
+            </div>
+
+            <!-- Module 5 -->
+            <div class="module-card">
+                <h2 class="module-title">Module 5</h2>
+                <h3 class="module-subtitle">Shear Stresses</h3>
+                <p>Derivation of formula – Shear stress distribution across various beam sections like rectangular, circular, triangular, I, T angle sections.</p>
+            </div>
+
+            <!-- Module 6 -->
+            <div class="module-card">
+                <h2 class="module-title">Module 6</h2>
+                <h3 class="module-subtitle">Slope and deflection</h3>
+                <p>Relationship between moment, slope and deflection, Moment area method, Macaulay’s method. Use of these methods to calculate slope and deflection for determinate beams.</p>
+            </div>
+
+            <!-- Module 7 -->
+            <div class="module-card">
+                <h2 class="module-title">Module 7</h2>
+                <h3 class="module-subtitle">Torsion</h3>
+                <p>Derivation of torsion equation and its assumptions. Applications of the equation of the hollow and solid circular shafts, torsional rigidity, Combined torsion and bending of circular shafts, principal stress and maximum shear stresses under combined loading of bending and torsion. Analysis of close-coiled-helical springs.</p>
+            </div>
+            
+            <!-- Module 8 -->
+            <div class="module-card">
+                <h2 class="module-title">Module 8</h2>
+                <h3 class="module-subtitle">Thin Cylinders and Spheres</h3>
+                <p>Derivation of formulae and calculations of hoop stress, longitudinal stress in a cylinder, and sphere subjected to internal pressures.</p>
+            </div>
+
+            <!-- Lab Experiments -->
+            <div class="module-card">
+                <h2 class="module-title">List of Experiments</h2>
+                <ul class="styled-list">
+                    <li>Tension test</li>
+                    <li>Bending tests on simply supported beam and Cantilever beam.</li>
+                    <li>Compression test on concrete</li>
+                    <li>Impact test</li>
+                    <li>Shear test</li>
+                    <li>Investigation of Hooke's law that is the proportional relation between force and stretching in elastic deformation</li>
+                    <li>Determination of torsion and deflection,</li>
+                    <li>Measurement of forces on supports in statically determinate beam,</li>
+                    <li>Determination of shear forces in beams,</li>
+                    <li>Determination of bending moments in beams,</li>
+                    <li>Measurement of deflections in statically determinate beam,</li>
+                    <li>Measurement of strain in a bar</li>
+                    <li>Bend test steel bar;</li>
+                    <li>Yield/tensile strength of steel bar;</li>
+                </ul>
+            </div>
+
+            <!-- Text/Reference Books -->
+            <div class="module-card">
+                <h2 class="module-title">Text/Reference Books</h2>
+                <ul class="styled-list">
+                    <li>Timoshenko, S. and Young, D. H., “Elements of Strength of Materials”, DVNC, New York, USA.</li>
+                    <li>Kazmi, S. M. A., “Solid Mechanics” TMH, Delhi, India.</li>
+                    <li>Hibbeler, R. C. Mechanics of Materials. 6th ed. East Rutherford, NJ: Pearson Prentice Hall, 2004</li>
+                    <li>Crandall, S. H., N. C. Dahl, and T. J. Lardner. An Introduction to the Mechanics of Solids. 2nd ed. New York, NY: McGraw Hill, 1979</li>
+                    <li>Laboratory Manual of Testing Materials - William Kendrick Hall</li>
+                    <li>Mechanics of Materials - Ferdinand P. Beer, E. Russel Jhonston Jr., John T. DEwolf – TMH 2002.</li>
+                    <li>Strength of Materials by R. Subramanian, Oxford University Press, New Delhi.</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

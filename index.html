@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEU PATNA - 4th Semester Syllabus</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for the page */
+        body {
+            font-family: 'Lato', sans-serif;
+            /* Dark, modern background */
+            background-color: #111827;
+        }
+
+        .header-title {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Container for the subject cards */
+        .subject-grid {
+            display: grid;
+            /* Adjusted minmax for smaller cards */
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+
+        /* Individual subject card styling - made smaller */
+        .subject-card {
+            border-radius: 1rem;
+            /* Reduced padding */
+            padding: 1rem;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            /* Added a fixed height for consistency */
+            height: 140px; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Hover effect for the cards */
+        .subject-card:hover {
+            /* Reduced transform for smaller size */
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Glowing effect using pseudo-elements */
+        .subject-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at center, var(--glow-color), transparent 70%);
+            opacity: 0.2;
+            transition: opacity 0.3s ease;
+        }
+
+        .subject-card:hover::before {
+            opacity: 0.4;
+        }
+
+        .card-content {
+            position: relative; /* Ensure content is above the glow */
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        /* Reduced icon size */
+        .card-icon {
+            width: 32px;
+            height: 32px;
+            margin-bottom: 0.5rem;
+            color: white;
+        }
+
+        /* Reduced title font size */
+        .card-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem; /* text-base */
+            font-weight: 700;
+            color: white;
+            line-height: 1.2; /* Tighter line height */
+        }
+
+        /* Reduced code font size */
+        .card-code {
+            font-family: 'Lato', sans-serif;
+            font-size: 0.75rem; /* text-xs */
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 0.25rem;
+        }
+    </style>
+</head>
+<body class="antialiased text-white p-4 md:p-8">
+    <div class="container mx-auto">
+        
+        <!-- Back Button -->
+        <div class="mb-8">
+            <a href="#" class="inline-flex items-center px-3 py-1 border border-transparent text-xs font-medium rounded-md shadow-sm text-white bg-gray-700 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-indigo-500 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Back
+            </a>
+        </div>
+        
+        <!-- Main Heading -->
+        <header class="text-center mb-12">
+            <!-- Resized heading for consistency -->
+            <h1 class="header-title text-2xl md:text-3xl font-bold">4th Semester Civil Engineering</h1>
+            <p class="text-base md:text-lg text-white/80 mt-3">
+                Syllabus (BEU Pattern)
+            </p>
+        </header>
+
+        <!-- Grid of Subject Cards -->
+        <main class="subject-grid">
+
+            <!-- Card: Mechanical Engineering -->
+            <a href="ME.html" class="subject-card" style="background-color: #1F2937; --glow-color: #3B82F6;">
+                <div class="card-content">
+                    <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                    <h2 class="card-title">Mechanical Engineering</h2>
+                    <p class="card-code">(ESC 209)</p>
+                </div>
+            </a>
+
+            <!-- Card: Engineering Geology -->
+            <a href="EG.html" class="subject-card" style="background-color: #1F2937; --glow-color: #10B981;">
+                <div class="card-content">
+                    <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2h1a2 2 0 002-2v-1a2 2 0 012-2h1.945M7.884 5.945L9 3m0 0l1.116 2.945M9 3v1.116M15 9a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                    <h2 class="card-title">Engineering Geology</h2>
+                    <p class="card-code">(PCC CE 202)</p>
+                </div>
+            </a>
+
+            <!-- Card: Disaster Preparedness -->
+            <a href="PM.html" class="subject-card" style="background-color: #1F2937; --glow-color: #F59E0B;">
+                <div class="card-content">
+                    <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
+                    <h2 class="card-title">Disaster Preparedness</h2>
+                    <p class="card-code">(PCC CE 203)</p>
+                </div>
+            </a>
+
+            <!-- Card: Fluid Mechanics -->
+            <a href="IFM.html" class="subject-card" style="background-color: #1F2937; --glow-color: #EF4444;">
+                <div class="card-content">
+                    <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l7-7 7 7M5 19l7-7 7 7" /></svg>
+                    <h2 class="card-title">Fluid Mechanics</h2>
+                    <p class="card-code">(PCC CE 204)</p>
+                </div>
+            </a>
+
+            <!-- Card: Solid Mechanics -->
+            <a href="ISM.html" class="subject-card" style="background-color: #1F2937; --glow-color: #8B5CF6;">
+                <div class="card-content">
+                    <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" /></svg>
+                    <h2 class="card-title">Solid Mechanics</h2>
+                    <p class="card-code">(PCC CE 205)</p>
+                </div>
+            </a>
+            
+            <!-- Card: Structural Analysis -->
+            <a href="SA.html" class="subject-card" style="background-color: #1F2937; --glow-color: #0891B2;">
+                <div class="card-content">
+                    <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" /></svg>
+                    <h2 class="card-title">Structural Analysis</h2>
+                    <p class="card-code">(PCC CE 208)</p>
+                </div>
+            </a>
+
+            <!-- Card: Materials & Testing -->
+            <a href="MT.html" class="subject-card" style="background-color: #1F2937; --glow-color: #65A30D;">
+                <div class="card-content">
+                    <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>
+                    <h2 class="card-title">Materials & Testing</h2>
+                    <p class="card-code">(PCC CE 207)</p>
+                </div>
+            </a>
+
+            <!-- Card: Societal & Global Impact -->
+            <a href="SGI.html" class="subject-card" style="background-color: #1F2937; --glow-color: #BE185D;">
+                <div class="card-content">
+                    <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2h1a2 2 0 002-2v-1a2 2 0 012-2h1.945a2.055 2.055 0 011.945 2.055v.001a2.055 2.055 0 01-1.945 2.055H5a2 2 0 01-2-2v-1a2 2 0 012-2zM12 21a9.004 9.004 0 008.945-8.945" /></svg>
+                    <h2 class="card-title">Societal & Global Impact</h2>
+                    <p class="card-code">(HSMC 252)</p>
+                </div>
+            </a>
+
+        </main>
+    </div>
+
+</body>
+</html>

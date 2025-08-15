@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechanical Engineering Syllabus</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #111827; /* Dark background */
+            color: #cbd5e1; /* Light gray text for readability */
+        }
+        .header-title {
+            font-family: 'Poppins', sans-serif;
+        }
+        .module-card {
+            background-color: #1f2937;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            border: 1px solid #374151;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .module-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #93c5fd; /* Light blue for titles */
+            margin-bottom: 0.5rem;
+        }
+        .module-subtitle {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #6ee7b7; /* A contrasting accent color */
+            margin-bottom: 1rem;
+        }
+        .book-list li {
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        .book-list li::before {
+            content: '➔';
+            position: absolute;
+            left: 0;
+            color: #93c5fd;
+        }
+    </style>
+</head>
+<body class="antialiased p-4 md:p-8">
+
+    <div class="container mx-auto max-w-5xl">
+        <!-- Header Section -->
+        <header class="text-center mb-10">
+            <h1 class="header-title text-4xl md:text-5xl font-bold text-white">Mechanical Engineering</h1>
+            <p class="text-lg text-white/70 mt-2">(ESC 209)</p>
+        </header>
+
+        <!-- Navigation -->
+        <div class="mb-10">
+            <a href="index.html" class="inline-flex items-center px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-lg transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+                Back
+            </a>
+        </div>
+
+        <!-- Main Syllabus Content -->
+        <main>
+            <!-- Module 1 -->
+            <div class="module-card">
+                <h2 class="module-title">Module 1</h2>
+                <h3 class="module-subtitle">Basic Concepts</h3>
+                <p>Basic concepts - concept of continuum, macroscopic approach, Thermodynamic systems - closed, open and isolated. Property, state, path and process, quasistatic process, work, modes of work. Zeroth law of thermodynamics, concept of temperature and heat. Concept of ideal and real gases.</p>
+            </div>
+
+            <!-- Module 2 -->
+            <div class="module-card">
+                <h2 class="module-title">Module 2</h2>
+                <h3 class="module-subtitle">First Law of Thermodynamics</h3>
+                <p>Concepts of Internal Energy, Specific Heat Capacities, Enthalpy. Energy Balance for Closed and Open Systems, Energy Balance for Steady-Flow Systems. Steady-Flow Engineering Devices. Energy Balance for Unsteady-Flow.</p>
+            </div>
+
+            <!-- Module 3 -->
+            <div class="module-card">
+                <h2 class="module-title">Module 3</h2>
+                <h3 class="module-subtitle">Second Law of Thermodynamics</h3>
+                <p>Thermal energy reservoirs, heat engines energy conversion, Kelvin and Clausius statements of second law, the Carnot cycle, the Carnot Theorem, the thermodynamic temperature scale, the Carnot heat engine, efficiency, the Carnot refrigerator and heat pump, COP. Clausius inequality, concept of entropy, principle of increase of entropy – availability, the increase of entropy principle, perpetual-motion machines, reversible and irreversible processes, Entropy change of pure substances, isentropic processes, property diagrams involving entropy, entropy change of liquids and solids, the entropy change of ideal gases, reversible steady-flow work, minimizing the compressor work, isentropic efficiencies of steady-flow devices, and entropy balance. Energy - a measure of work potential, including work potential of energy, reversible work and irreversibility, second-law efficiency, exergy change of a system, energy transfer by heat, work, and mass, the decrease of exergy principle and exergy destruction, energy balance: closed systems and control volumes energy balance.</p>
+            </div>
+
+            <!-- Module 4 -->
+            <div class="module-card">
+                <h2 class="module-title">Module 4</h2>
+                <h3 class="module-subtitle">Properties Of Pure Substance</h3>
+                <p>Properties of pure substances. Thermodynamic properties of pure substances in solid, liquid and vapour phases. Phase rule, P-V, P-T, T-V, T-S, H-S diagrams, PVT surfaces. Thermodynamic properties of steam. Calculations of work done and heat transfer in non- flow and flow processes.</p>
+            </div>
+
+            <!-- Module 5 -->
+            <div class="module-card">
+                <h2 class="module-title">Module 5</h2>
+                <h3 class="module-subtitle">Power Cycles</h3>
+                <p>Vapour and combined power cycles, including the Carnot vapor cycle, Rankine cycle: the ideal cycle for vapor power, the ideal reheat and regenerative and the second- law analysis of vapour power cycles. Gas power cycles, including basic considerations in the analysis of power cycles, the Carnot cycle and its value in engineering, an overview of reciprocating engines, air standard assumptions, gasoline engine Otto cycle, diesel engine cycle, gas-turbine Brayton cycle, and the second-law analysis of gas power cycles.</p>
+            </div>
+
+            <!-- Module 6 -->
+            <div class="module-card">
+                <h2 class="module-title">Module 6</h2>
+                <h3 class="module-subtitle">Ideal and Real Gases and Thermodynamic Relations</h3>
+                <p>Gas mixtures – properties ideal and real gases. Equation of state, Avogadro’s Law, Van Der Waals equation of state, Compressibility factor, compressibility chart. Dalton’s law of partial pressure. Exact differentials, T-D relations, Maxwell’s relations. Clausius Clapeyron equations, Joule – Thomson coefficient.</p>
+            </div>
+
+            <!-- Module 7 -->
+            <div class="module-card">
+                <h2 class="module-title">Module 7</h2>
+                <h3 class="module-subtitle">Psychrometry and Refrigeration Cycles</h3>
+                <p>Psychrometry and psychrometric charts, property calculations of air vapour mixtures. Psychrometric process – Sensible heat exchange processes. Latent heat exchange processes. Adiabatic mixing, evaporative cooling. Use of standard thermodynamic tables, Mollier diagram, Psychrometric chart and Refrigerant property tables. Refrigeration cycles, including refrigerators and heat pumps, the ideal reversed Carnot vapour-compression refrigeration cycle, actual vapor- compression refrigeration cycles, heat pump systems, gas refrigeration cycles, and absorption refrigeration systems.</p>
+            </div>
+
+            <!-- Text/Reference Books -->
+            <div class="module-card">
+                <h2 class="module-title">Text/Reference Books</h2>
+                <ul class="book-list space-y-2">
+                    <li>Nag.P.K., “Engineering Thermodynamics”, Tata McGraw-Hill, New Delhi.</li>
+                    <li>Cengel, Thermodynamics – An Engineering Approach Tata McGraw Hill, New Delhi.</li>
+                    <li>Sonntag, R. E., Borgnakke, C., & Wylen, G. J. V. Fundamentals of thermodynamics: Wiley.</li>
+                    <li>Moran, M. J., Shapiro, H. N., Boettner, D. D., & Bailey, M. Fundamentals of Engineering Thermodynamics: John Wiley & Sons.</li>
+                    <li>Jones, J. B., & Dugan, R. E. Engineering thermodynamics: Prentice Hall.</li>
+                    <li>Potter, M. C., & Somerton, C. W. Schaum's Outline of Thermodynamics for Engineers, McGraw-Hill.</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

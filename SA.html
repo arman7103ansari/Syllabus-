@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structural Analysis Syllabus</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #111827; /* Dark background */
+            color: #cbd5e1; /* Light gray text for readability */
+        }
+        .header-title {
+            font-family: 'Poppins', sans-serif;
+        }
+        .module-card {
+            background-color: #1f2937;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            border: 1px solid #374151;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .module-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #0891b2; /* Teal accent for Structural Analysis */
+            margin-bottom: 1rem;
+        }
+        .styled-list li {
+            padding-left: 1.5rem;
+            position: relative;
+            margin-bottom: 0.5rem;
+        }
+        .styled-list li::before {
+            content: '➔';
+            position: absolute;
+            left: 0;
+            color: #0891b2;
+        }
+    </style>
+</head>
+<body class="antialiased p-4 md:p-8">
+
+    <div class="container mx-auto max-w-5xl">
+        <!-- Header Section -->
+        <header class="text-center mb-10">
+            <h1 class="header-title text-4xl md:text-5xl font-bold text-white">Structural Analysis</h1>
+            <p class="text-lg text-white/70 mt-2">(PCC CE 208)</p>
+        </header>
+
+        <!-- Navigation -->
+        <div class="mb-10">
+            <a href="index.html" class="inline-flex items-center px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-lg transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+                Back
+            </a>
+        </div>
+
+        <!-- Main Syllabus Content -->
+        <main>
+            <!-- Analysis of indeterminate structures -->
+            <div class="module-card">
+                <h2 class="module-title">Analysis of Indeterminate Structures</h2>
+                <p>Analysis of indeterminate structures by force methods, flexibility coefficients, Energy methods: Principle of minimum potential energy, principle of virtual work, Castigliano’s theorems, Reciprocal theorem, unit load method, Influence line and Rolling loads, beam, frames and arches, Muller- Breslau Principles and its applications to determinate and indeterminate structures.</p>
+            </div>
+
+            <!-- Analysis of Beams and Frames -->
+            <div class="module-card">
+                <h2 class="module-title">Analysis of Beams and Frames</h2>
+                <p>Moment Area method, Slope deflection method, Three Moment Equation, Moments distribution methods, effect of symmetry and antisymmetry, sway correction, Lateral load analysis: Portal and Cantilever methods, Matrix method of structural analysis, Displacement/Stiffness methods.</p>
+            </div>
+
+            <!-- Text/Reference Books -->
+            <div class="module-card">
+                <h2 class="module-title">Text/Reference Books</h2>
+                <ul class="styled-list space-y-2">
+                    <li>C.S. Reddy, Basic Structural Analysis, Second Edition, Tata McGraw Hill, 2005.</li>
+                    <li>R.C. Hibbeler, Structural Analysis, Pearson Education, 6th edition, 2009.</li>
+                    <li>C.K. Wang, Intermediate Structural Analysis, Tata McGraw Hill, 1984.</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
